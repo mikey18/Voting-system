@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    font-family: "Roboto";
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    -moz-osx-font-smoothing: grayscale;
+}
+:root {
+    --bg-green: #4ade80;
+    --bg-red: #ef4444;
+    --bg-blue: #3b82f6;
+}
+.votes:nth-child(1) {
+    --main-color: var(--bg-blue);
+}
+
+.votes:nth-child(2) {
+    --main-color: var(--bg-red);
+}
+
+.votes:nth-child(3) {
+    --main-color: var(--bg-green);
+}
+
+input:checked + label {
+    border-color: var(--main-color);
+}
+
+progress::-webkit-progress-bar {
+    background: #cbd5e1;
+    border-radius: 0.5rem;
+}
+
+progress::-webkit-progress-value {
+    background: var(--main-color);
+}
